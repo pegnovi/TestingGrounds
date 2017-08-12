@@ -18,16 +18,15 @@ class TESTINGGROUNDS_API AGun : public AActor
 	UPROPERTY(VisibleDefaultsOnly, Category = Mesh)
 	class USceneComponent* FP_MuzzleLocation;
 
-
 public:	
 	// Sets default values for this actor's properties
 	AGun();
 
+	void OnFire();
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
-
-	void OnFire();
 
 public:	
 	// Called every frame
