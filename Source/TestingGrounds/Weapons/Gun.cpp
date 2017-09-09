@@ -48,6 +48,7 @@ void AGun::OnFire()
 	if (ProjectileClass != NULL)
 	{
 		UWorld* const World = GetWorld();
+
 		if (World != NULL)
 		{
 
